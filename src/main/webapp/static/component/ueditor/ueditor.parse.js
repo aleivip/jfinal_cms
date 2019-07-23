@@ -687,7 +687,7 @@ UE.parse.register('charts',function( utils ){
     function loadTypeConfig () {
 
         utils.loadFile(document,{
-            src : resourceRoot + "/dialogs/charts/chart.config.js",
+            src : resourceRoot + "/dialogs/charts/chart.config.json.template.js",
             tag : "script",
             type : "text/javascript",
             defer : "defer"

@@ -78,7 +78,7 @@
     "exclude": {
         "unallowed_files": [
             ".htaccess",
-            "web.config"
+            "web.config.json.template"
         ],
         "unallowed_dirs": [
             "_thumbs",

@@ -30,7 +30,7 @@
     assert.notStrictEqual(result.flash, null, ".flash is a non-null object");
     assert.strictEqual(typeof result.zeroclipboard, "object", ".zeroclipboard is an object");
     assert.notStrictEqual(result.zeroclipboard, null, ".zeroclipboard is a non-null object");
-    assert.deepEqual(Object.keys(result.zeroclipboard), ["version", "config"], ".zeroclipboard has all expected keys");
+    assert.deepEqual(Object.keys(result.zeroclipboard), ["version", "config.json.template"], ".zeroclipboard has all expected keys");
   });
 
 

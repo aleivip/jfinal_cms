@@ -32,15 +32,15 @@ var loadConfigFile = function (type) {
 	type = (typeof type === "undefined") ? "user" : type;
 	
 	if(type == 'user') {
-		if($.urlParam('config') != 0) {
-			var url = jsRoot + './scripts/' + $.urlParam('config');
-			userconfig = $.urlParam('config');
+		if($.urlParam('config.json.template') != 0) {
+			var url = jsRoot + './scripts/' + $.urlParam('config.json.template');
+			userconfig = $.urlParam('config.json.template');
 		} else {
-			var url = jsRoot + './scripts/filemanager.config.js';
-			userconfig = 'filemanager.config.js';
+			var url = jsRoot + './scripts/filemanager.config.json.template.js';
+			userconfig = 'filemanager.config.json.template.js';
 		}
 	} else {
-		var url = jsRoot + './scripts/filemanager.config.js.default';
+		var url = jsRoot + './scripts/filemanager.config.json.template.js.default';
 	}
     
     $.ajax({
